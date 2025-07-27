@@ -1,0 +1,18 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    always_put_required_named_parameters_first: ignore
+    invalid_annotation_target: ignore
+    unnecessary_library_name: ignore
+    use_string_in_part_of_directives: ignore
+
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+    - "**/*.freezed.dart"
+    - "**/*.constants.dart"
+    - "**/*.config.dart"
+    - "**/generated_plugin_registrant.dart"
+    - "**/generated/**/*"
+    - "**/generated/*"
