@@ -1,4 +1,4 @@
-# 🎬 kaaru_app
+# 🎬 movie_app
 
 Aplicación Flutter para mostrar películas usando una arquitectura limpia basada en Riverpod, Freezed y GoRouter.
 
@@ -6,7 +6,7 @@ Aplicación Flutter para mostrar películas usando una arquitectura limpia basad
 
 ## 🧱 Arquitectura del Proyecto
 
-El proyecto sigue una **arquitectura limpia**, dividiendo responsabilidades en capas bien definidas para mantener el código modular, testable y fácil de escalar:
+El proyecto sigue una **arquitectura limpia**, dividiendo responsabilidades en capas bien definidas para mantener el código modular, testeable y fácil de escalar:
 
 ### 1. `lib/common/`
 Contiene configuraciones y utilidades reutilizables globalmente:
@@ -39,14 +39,16 @@ Contiene la lógica de negocio pura:
 Contiene todo lo relacionado a la interfaz de usuario y gestión de estado:
 
 - `movies/pages/`: vistas principales como `MoviesPage`
-- `movies/widgets/`: widgets UI específicos de este módulo (grillas, scroll, etc.)
+- `movies/widgets/`: widgets UI específicos de este módulo (grids, scroll, etc.)
 - `movies/state/`: manejo del estado con `StateNotifier` y `Riverpod`
 
 ---
 
 ## 🚀 Ejecución y Generación
-
+```bash
 dart run build_runner build
+```
+
 ### Instalar dependencias
 ```bash
 flutter pub get
