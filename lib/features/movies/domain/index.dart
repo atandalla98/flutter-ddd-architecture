@@ -2,7 +2,8 @@ library domain;
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:kaaru_app/data/index.dart';
+import 'package:kaaru_app/core/index.dart';
+import 'package:kaaru_app/features/movies/data/index.dart';
 
 part 'entity/movie_entity.dart';
 

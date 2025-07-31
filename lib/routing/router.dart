@@ -1,4 +1,4 @@
-part of common;
+part of routing;
 
 class AppRouter {
   static Future<T?> go<T>(

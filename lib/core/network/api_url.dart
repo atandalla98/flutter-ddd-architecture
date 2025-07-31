@@ -1,4 +1,4 @@
-part of data;
+part of core;
 
 class ApiUrls {
   static const String listMovies = '/api/v2/list_movies.json';

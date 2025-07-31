@@ -1,4 +1,4 @@
-part of data;
+part of core;
 
 @RestApi()
 abstract class ApiService {

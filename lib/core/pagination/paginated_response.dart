@@ -1,4 +1,4 @@
-part of data;
+part of core;
 
 @Freezed(genericArgumentFactories: true)
 sealed class PaginatedResponse<T> with _$PaginatedResponse<T> {

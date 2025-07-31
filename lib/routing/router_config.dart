@@ -1,4 +1,4 @@
-part of common;
+part of routing;
 
 final routerConfig = Provider<GoRouter>(
   (ref) => GoRouter(

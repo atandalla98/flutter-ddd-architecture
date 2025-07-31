@@ -1,4 +1,4 @@
-part of data;
+part of core;
 
 @freezed
 abstract class Page with _$Page {

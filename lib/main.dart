@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:kaaru_app/routing/index.dart';
 
 import 'common/index.dart';
 
