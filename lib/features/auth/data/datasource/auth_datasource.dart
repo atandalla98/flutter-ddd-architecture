@@ -1,40 +1,25 @@
 part of data;
 
-class AuthDataSource implements IAuth {
+class AuthDataSource {
   final ApiService apiService;
 
   AuthDataSource(this.apiService);
 
-  @override
-  Future<(String token, UserModel user)> login(
-    LoginRequestModel request,
-  ) async {
-    final response = await apiService.login(request);
-    return (response.jwt, response.user);
+  Future<(String, UserModel)> login(LoginRequestModel request) async {
+    final res = await apiService.login(request);
+    return (res.jwt, res.user);
   }
 
-  @override
-  Future<(String token, UserModel user)> register(
-    RegisterRequestModel request,
-  ) async {
-    final response = await apiService.register(request);
-    return (response.jwt, response.user);
+  Future<(String, UserModel)> register(RegisterRequestModel request) async {
+    final res = await apiService.register(request);
+    return (res.jwt, res.user);
   }
 
-  @override
-  Future<String> refreshToken() {
-    return apiService.refreshToken();
-  }
+  Future<String> refreshToken() => apiService.refreshToken();
 
-  @override
-  Future<UserModel> getMe() {
-    return apiService.getUserMe();
-  }
+  Future<UserModel> getMe() => apiService.getUserMe();
 
-  @override
-  Future<void> logout() {
-    return apiService.logout();
-  }
+  Future<void> logout() => apiService.logout();
 }
 
 // Provider para inyección

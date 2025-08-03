@@ -1407,4 +1407,1490 @@ $UserModelCopyWith<$Res> get user {
 }
 }
 
+
+/// @nodoc
+mixin _$UserProfileModel {
+
+ int get id; String get documentId; String get identification; String get name; String get lastname; String get cellphoneCountryCode; String get cellphone; String get gender; String get birthday; String get mainStreet; String get secondaryStreet; String get numericStreet; String get createdAt; String get updatedAt; String get publishedAt; bool get deleted; CountryModel get country; ProvinceModel get province; CityModel get city; UserModel get user; RoleModel get role;
+/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$UserProfileModelCopyWith<UserProfileModel> get copyWith => _$UserProfileModelCopyWithImpl<UserProfileModel>(this as UserProfileModel, _$identity);
+
+  /// Serializes this UserProfileModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is UserProfileModel&&(identical(other.id, id) || other.id == id)&&(identical(other.documentId, documentId) || other.documentId == documentId)&&(identical(other.identification, identification) || other.identification == identification)&&(identical(other.name, name) || other.name == name)&&(identical(other.lastname, lastname) || other.lastname == lastname)&&(identical(other.cellphoneCountryCode, cellphoneCountryCode) || other.cellphoneCountryCode == cellphoneCountryCode)&&(identical(other.cellphone, cellphone) || other.cellphone == cellphone)&&(identical(other.gender, gender) || other.gender == gender)&&(identical(other.birthday, birthday) || other.birthday == birthday)&&(identical(other.mainStreet, mainStreet) || other.mainStreet == mainStreet)&&(identical(other.secondaryStreet, secondaryStreet) || other.secondaryStreet == secondaryStreet)&&(identical(other.numericStreet, numericStreet) || other.numericStreet == numericStreet)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt)&&(identical(other.publishedAt, publishedAt) || other.publishedAt == publishedAt)&&(identical(other.deleted, deleted) || other.deleted == deleted)&&(identical(other.country, country) || other.country == country)&&(identical(other.province, province) || other.province == province)&&(identical(other.city, city) || other.city == city)&&(identical(other.user, user) || other.user == user)&&(identical(other.role, role) || other.role == role));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hashAll([runtimeType,id,documentId,identification,name,lastname,cellphoneCountryCode,cellphone,gender,birthday,mainStreet,secondaryStreet,numericStreet,createdAt,updatedAt,publishedAt,deleted,country,province,city,user,role]);
+
+@override
+String toString() {
+  return 'UserProfileModel(id: $id, documentId: $documentId, identification: $identification, name: $name, lastname: $lastname, cellphoneCountryCode: $cellphoneCountryCode, cellphone: $cellphone, gender: $gender, birthday: $birthday, mainStreet: $mainStreet, secondaryStreet: $secondaryStreet, numericStreet: $numericStreet, createdAt: $createdAt, updatedAt: $updatedAt, publishedAt: $publishedAt, deleted: $deleted, country: $country, province: $province, city: $city, user: $user, role: $role)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $UserProfileModelCopyWith<$Res>  {
+  factory $UserProfileModelCopyWith(UserProfileModel value, $Res Function(UserProfileModel) _then) = _$UserProfileModelCopyWithImpl;
+@useResult
+$Res call({
+ int id, String documentId, String identification, String name, String lastname, String cellphoneCountryCode, String cellphone, String gender, String birthday, String mainStreet, String secondaryStreet, String numericStreet, String createdAt, String updatedAt, String publishedAt, bool deleted, CountryModel country, ProvinceModel province, CityModel city, UserModel user, RoleModel role
+});
+
+
+$CountryModelCopyWith<$Res> get country;$ProvinceModelCopyWith<$Res> get province;$CityModelCopyWith<$Res> get city;$UserModelCopyWith<$Res> get user;$RoleModelCopyWith<$Res> get role;
+
+}
+/// @nodoc
+class _$UserProfileModelCopyWithImpl<$Res>
+    implements $UserProfileModelCopyWith<$Res> {
+  _$UserProfileModelCopyWithImpl(this._self, this._then);
+
+  final UserProfileModel _self;
+  final $Res Function(UserProfileModel) _then;
+
+/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? documentId = null,Object? identification = null,Object? name = null,Object? lastname = null,Object? cellphoneCountryCode = null,Object? cellphone = null,Object? gender = null,Object? birthday = null,Object? mainStreet = null,Object? secondaryStreet = null,Object? numericStreet = null,Object? createdAt = null,Object? updatedAt = null,Object? publishedAt = null,Object? deleted = null,Object? country = null,Object? province = null,Object? city = null,Object? user = null,Object? role = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,documentId: null == documentId ? _self.documentId : documentId // ignore: cast_nullable_to_non_nullable
+as String,identification: null == identification ? _self.identification : identification // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,lastname: null == lastname ? _self.lastname : lastname // ignore: cast_nullable_to_non_nullable
+as String,cellphoneCountryCode: null == cellphoneCountryCode ? _self.cellphoneCountryCode : cellphoneCountryCode // ignore: cast_nullable_to_non_nullable
+as String,cellphone: null == cellphone ? _self.cellphone : cellphone // ignore: cast_nullable_to_non_nullable
+as String,gender: null == gender ? _self.gender : gender // ignore: cast_nullable_to_non_nullable
+as String,birthday: null == birthday ? _self.birthday : birthday // ignore: cast_nullable_to_non_nullable
+as String,mainStreet: null == mainStreet ? _self.mainStreet : mainStreet // ignore: cast_nullable_to_non_nullable
+as String,secondaryStreet: null == secondaryStreet ? _self.secondaryStreet : secondaryStreet // ignore: cast_nullable_to_non_nullable
+as String,numericStreet: null == numericStreet ? _self.numericStreet : numericStreet // ignore: cast_nullable_to_non_nullable
+as String,createdAt: null == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
+as String,updatedAt: null == updatedAt ? _self.updatedAt : updatedAt // ignore: cast_nullable_to_non_nullable
+as String,publishedAt: null == publishedAt ? _self.publishedAt : publishedAt // ignore: cast_nullable_to_non_nullable
+as String,deleted: null == deleted ? _self.deleted : deleted // ignore: cast_nullable_to_non_nullable
+as bool,country: null == country ? _self.country : country // ignore: cast_nullable_to_non_nullable
+as CountryModel,province: null == province ? _self.province : province // ignore: cast_nullable_to_non_nullable
+as ProvinceModel,city: null == city ? _self.city : city // ignore: cast_nullable_to_non_nullable
+as CityModel,user: null == user ? _self.user : user // ignore: cast_nullable_to_non_nullable
+as UserModel,role: null == role ? _self.role : role // ignore: cast_nullable_to_non_nullable
+as RoleModel,
+  ));
+}
+/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$CountryModelCopyWith<$Res> get country {
+  
+  return $CountryModelCopyWith<$Res>(_self.country, (value) {
+    return _then(_self.copyWith(country: value));
+  });
+}/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$ProvinceModelCopyWith<$Res> get province {
+  
+  return $ProvinceModelCopyWith<$Res>(_self.province, (value) {
+    return _then(_self.copyWith(province: value));
+  });
+}/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$CityModelCopyWith<$Res> get city {
+  
+  return $CityModelCopyWith<$Res>(_self.city, (value) {
+    return _then(_self.copyWith(city: value));
+  });
+}/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$UserModelCopyWith<$Res> get user {
+  
+  return $UserModelCopyWith<$Res>(_self.user, (value) {
+    return _then(_self.copyWith(user: value));
+  });
+}/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$RoleModelCopyWith<$Res> get role {
+  
+  return $RoleModelCopyWith<$Res>(_self.role, (value) {
+    return _then(_self.copyWith(role: value));
+  });
+}
+}
+
+
+/// Adds pattern-matching-related methods to [UserProfileModel].
+extension UserProfileModelPatterns on UserProfileModel {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _UserProfileModel value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _UserProfileModel() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _UserProfileModel value)  $default,){
+final _that = this;
+switch (_that) {
+case _UserProfileModel():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _UserProfileModel value)?  $default,){
+final _that = this;
+switch (_that) {
+case _UserProfileModel() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String documentId,  String identification,  String name,  String lastname,  String cellphoneCountryCode,  String cellphone,  String gender,  String birthday,  String mainStreet,  String secondaryStreet,  String numericStreet,  String createdAt,  String updatedAt,  String publishedAt,  bool deleted,  CountryModel country,  ProvinceModel province,  CityModel city,  UserModel user,  RoleModel role)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _UserProfileModel() when $default != null:
+return $default(_that.id,_that.documentId,_that.identification,_that.name,_that.lastname,_that.cellphoneCountryCode,_that.cellphone,_that.gender,_that.birthday,_that.mainStreet,_that.secondaryStreet,_that.numericStreet,_that.createdAt,_that.updatedAt,_that.publishedAt,_that.deleted,_that.country,_that.province,_that.city,_that.user,_that.role);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String documentId,  String identification,  String name,  String lastname,  String cellphoneCountryCode,  String cellphone,  String gender,  String birthday,  String mainStreet,  String secondaryStreet,  String numericStreet,  String createdAt,  String updatedAt,  String publishedAt,  bool deleted,  CountryModel country,  ProvinceModel province,  CityModel city,  UserModel user,  RoleModel role)  $default,) {final _that = this;
+switch (_that) {
+case _UserProfileModel():
+return $default(_that.id,_that.documentId,_that.identification,_that.name,_that.lastname,_that.cellphoneCountryCode,_that.cellphone,_that.gender,_that.birthday,_that.mainStreet,_that.secondaryStreet,_that.numericStreet,_that.createdAt,_that.updatedAt,_that.publishedAt,_that.deleted,_that.country,_that.province,_that.city,_that.user,_that.role);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String documentId,  String identification,  String name,  String lastname,  String cellphoneCountryCode,  String cellphone,  String gender,  String birthday,  String mainStreet,  String secondaryStreet,  String numericStreet,  String createdAt,  String updatedAt,  String publishedAt,  bool deleted,  CountryModel country,  ProvinceModel province,  CityModel city,  UserModel user,  RoleModel role)?  $default,) {final _that = this;
+switch (_that) {
+case _UserProfileModel() when $default != null:
+return $default(_that.id,_that.documentId,_that.identification,_that.name,_that.lastname,_that.cellphoneCountryCode,_that.cellphone,_that.gender,_that.birthday,_that.mainStreet,_that.secondaryStreet,_that.numericStreet,_that.createdAt,_that.updatedAt,_that.publishedAt,_that.deleted,_that.country,_that.province,_that.city,_that.user,_that.role);case _:
+  return null;
+
+}
+}
+
+}
+
+/// @nodoc
+@JsonSerializable()
+
+class _UserProfileModel implements UserProfileModel {
+  const _UserProfileModel({required this.id, required this.documentId, required this.identification, required this.name, required this.lastname, required this.cellphoneCountryCode, required this.cellphone, required this.gender, required this.birthday, required this.mainStreet, required this.secondaryStreet, required this.numericStreet, required this.createdAt, required this.updatedAt, required this.publishedAt, required this.deleted, required this.country, required this.province, required this.city, required this.user, required this.role});
+  factory _UserProfileModel.fromJson(Map<String, dynamic> json) => _$UserProfileModelFromJson(json);
+
+@override final  int id;
+@override final  String documentId;
+@override final  String identification;
+@override final  String name;
+@override final  String lastname;
+@override final  String cellphoneCountryCode;
+@override final  String cellphone;
+@override final  String gender;
+@override final  String birthday;
+@override final  String mainStreet;
+@override final  String secondaryStreet;
+@override final  String numericStreet;
+@override final  String createdAt;
+@override final  String updatedAt;
+@override final  String publishedAt;
+@override final  bool deleted;
+@override final  CountryModel country;
+@override final  ProvinceModel province;
+@override final  CityModel city;
+@override final  UserModel user;
+@override final  RoleModel role;
+
+/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$UserProfileModelCopyWith<_UserProfileModel> get copyWith => __$UserProfileModelCopyWithImpl<_UserProfileModel>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$UserProfileModelToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _UserProfileModel&&(identical(other.id, id) || other.id == id)&&(identical(other.documentId, documentId) || other.documentId == documentId)&&(identical(other.identification, identification) || other.identification == identification)&&(identical(other.name, name) || other.name == name)&&(identical(other.lastname, lastname) || other.lastname == lastname)&&(identical(other.cellphoneCountryCode, cellphoneCountryCode) || other.cellphoneCountryCode == cellphoneCountryCode)&&(identical(other.cellphone, cellphone) || other.cellphone == cellphone)&&(identical(other.gender, gender) || other.gender == gender)&&(identical(other.birthday, birthday) || other.birthday == birthday)&&(identical(other.mainStreet, mainStreet) || other.mainStreet == mainStreet)&&(identical(other.secondaryStreet, secondaryStreet) || other.secondaryStreet == secondaryStreet)&&(identical(other.numericStreet, numericStreet) || other.numericStreet == numericStreet)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt)&&(identical(other.publishedAt, publishedAt) || other.publishedAt == publishedAt)&&(identical(other.deleted, deleted) || other.deleted == deleted)&&(identical(other.country, country) || other.country == country)&&(identical(other.province, province) || other.province == province)&&(identical(other.city, city) || other.city == city)&&(identical(other.user, user) || other.user == user)&&(identical(other.role, role) || other.role == role));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hashAll([runtimeType,id,documentId,identification,name,lastname,cellphoneCountryCode,cellphone,gender,birthday,mainStreet,secondaryStreet,numericStreet,createdAt,updatedAt,publishedAt,deleted,country,province,city,user,role]);
+
+@override
+String toString() {
+  return 'UserProfileModel(id: $id, documentId: $documentId, identification: $identification, name: $name, lastname: $lastname, cellphoneCountryCode: $cellphoneCountryCode, cellphone: $cellphone, gender: $gender, birthday: $birthday, mainStreet: $mainStreet, secondaryStreet: $secondaryStreet, numericStreet: $numericStreet, createdAt: $createdAt, updatedAt: $updatedAt, publishedAt: $publishedAt, deleted: $deleted, country: $country, province: $province, city: $city, user: $user, role: $role)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$UserProfileModelCopyWith<$Res> implements $UserProfileModelCopyWith<$Res> {
+  factory _$UserProfileModelCopyWith(_UserProfileModel value, $Res Function(_UserProfileModel) _then) = __$UserProfileModelCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, String documentId, String identification, String name, String lastname, String cellphoneCountryCode, String cellphone, String gender, String birthday, String mainStreet, String secondaryStreet, String numericStreet, String createdAt, String updatedAt, String publishedAt, bool deleted, CountryModel country, ProvinceModel province, CityModel city, UserModel user, RoleModel role
+});
+
+
+@override $CountryModelCopyWith<$Res> get country;@override $ProvinceModelCopyWith<$Res> get province;@override $CityModelCopyWith<$Res> get city;@override $UserModelCopyWith<$Res> get user;@override $RoleModelCopyWith<$Res> get role;
+
+}
+/// @nodoc
+class __$UserProfileModelCopyWithImpl<$Res>
+    implements _$UserProfileModelCopyWith<$Res> {
+  __$UserProfileModelCopyWithImpl(this._self, this._then);
+
+  final _UserProfileModel _self;
+  final $Res Function(_UserProfileModel) _then;
+
+/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? documentId = null,Object? identification = null,Object? name = null,Object? lastname = null,Object? cellphoneCountryCode = null,Object? cellphone = null,Object? gender = null,Object? birthday = null,Object? mainStreet = null,Object? secondaryStreet = null,Object? numericStreet = null,Object? createdAt = null,Object? updatedAt = null,Object? publishedAt = null,Object? deleted = null,Object? country = null,Object? province = null,Object? city = null,Object? user = null,Object? role = null,}) {
+  return _then(_UserProfileModel(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,documentId: null == documentId ? _self.documentId : documentId // ignore: cast_nullable_to_non_nullable
+as String,identification: null == identification ? _self.identification : identification // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,lastname: null == lastname ? _self.lastname : lastname // ignore: cast_nullable_to_non_nullable
+as String,cellphoneCountryCode: null == cellphoneCountryCode ? _self.cellphoneCountryCode : cellphoneCountryCode // ignore: cast_nullable_to_non_nullable
+as String,cellphone: null == cellphone ? _self.cellphone : cellphone // ignore: cast_nullable_to_non_nullable
+as String,gender: null == gender ? _self.gender : gender // ignore: cast_nullable_to_non_nullable
+as String,birthday: null == birthday ? _self.birthday : birthday // ignore: cast_nullable_to_non_nullable
+as String,mainStreet: null == mainStreet ? _self.mainStreet : mainStreet // ignore: cast_nullable_to_non_nullable
+as String,secondaryStreet: null == secondaryStreet ? _self.secondaryStreet : secondaryStreet // ignore: cast_nullable_to_non_nullable
+as String,numericStreet: null == numericStreet ? _self.numericStreet : numericStreet // ignore: cast_nullable_to_non_nullable
+as String,createdAt: null == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
+as String,updatedAt: null == updatedAt ? _self.updatedAt : updatedAt // ignore: cast_nullable_to_non_nullable
+as String,publishedAt: null == publishedAt ? _self.publishedAt : publishedAt // ignore: cast_nullable_to_non_nullable
+as String,deleted: null == deleted ? _self.deleted : deleted // ignore: cast_nullable_to_non_nullable
+as bool,country: null == country ? _self.country : country // ignore: cast_nullable_to_non_nullable
+as CountryModel,province: null == province ? _self.province : province // ignore: cast_nullable_to_non_nullable
+as ProvinceModel,city: null == city ? _self.city : city // ignore: cast_nullable_to_non_nullable
+as CityModel,user: null == user ? _self.user : user // ignore: cast_nullable_to_non_nullable
+as UserModel,role: null == role ? _self.role : role // ignore: cast_nullable_to_non_nullable
+as RoleModel,
+  ));
+}
+
+/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$CountryModelCopyWith<$Res> get country {
+  
+  return $CountryModelCopyWith<$Res>(_self.country, (value) {
+    return _then(_self.copyWith(country: value));
+  });
+}/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$ProvinceModelCopyWith<$Res> get province {
+  
+  return $ProvinceModelCopyWith<$Res>(_self.province, (value) {
+    return _then(_self.copyWith(province: value));
+  });
+}/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$CityModelCopyWith<$Res> get city {
+  
+  return $CityModelCopyWith<$Res>(_self.city, (value) {
+    return _then(_self.copyWith(city: value));
+  });
+}/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$UserModelCopyWith<$Res> get user {
+  
+  return $UserModelCopyWith<$Res>(_self.user, (value) {
+    return _then(_self.copyWith(user: value));
+  });
+}/// Create a copy of UserProfileModel
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$RoleModelCopyWith<$Res> get role {
+  
+  return $RoleModelCopyWith<$Res>(_self.role, (value) {
+    return _then(_self.copyWith(role: value));
+  });
+}
+}
+
+
+/// @nodoc
+mixin _$CountryModel {
+
+ int get id; String get name; String get code; String get nationality;
+/// Create a copy of CountryModel
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$CountryModelCopyWith<CountryModel> get copyWith => _$CountryModelCopyWithImpl<CountryModel>(this as CountryModel, _$identity);
+
+  /// Serializes this CountryModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is CountryModel&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.code, code) || other.code == code)&&(identical(other.nationality, nationality) || other.nationality == nationality));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,code,nationality);
+
+@override
+String toString() {
+  return 'CountryModel(id: $id, name: $name, code: $code, nationality: $nationality)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $CountryModelCopyWith<$Res>  {
+  factory $CountryModelCopyWith(CountryModel value, $Res Function(CountryModel) _then) = _$CountryModelCopyWithImpl;
+@useResult
+$Res call({
+ int id, String name, String code, String nationality
+});
+
+
+
+
+}
+/// @nodoc
+class _$CountryModelCopyWithImpl<$Res>
+    implements $CountryModelCopyWith<$Res> {
+  _$CountryModelCopyWithImpl(this._self, this._then);
+
+  final CountryModel _self;
+  final $Res Function(CountryModel) _then;
+
+/// Create a copy of CountryModel
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? name = null,Object? code = null,Object? nationality = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,code: null == code ? _self.code : code // ignore: cast_nullable_to_non_nullable
+as String,nationality: null == nationality ? _self.nationality : nationality // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [CountryModel].
+extension CountryModelPatterns on CountryModel {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _CountryModel value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _CountryModel() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _CountryModel value)  $default,){
+final _that = this;
+switch (_that) {
+case _CountryModel():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _CountryModel value)?  $default,){
+final _that = this;
+switch (_that) {
+case _CountryModel() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String name,  String code,  String nationality)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _CountryModel() when $default != null:
+return $default(_that.id,_that.name,_that.code,_that.nationality);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String name,  String code,  String nationality)  $default,) {final _that = this;
+switch (_that) {
+case _CountryModel():
+return $default(_that.id,_that.name,_that.code,_that.nationality);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String name,  String code,  String nationality)?  $default,) {final _that = this;
+switch (_that) {
+case _CountryModel() when $default != null:
+return $default(_that.id,_that.name,_that.code,_that.nationality);case _:
+  return null;
+
+}
+}
+
+}
+
+/// @nodoc
+@JsonSerializable()
+
+class _CountryModel implements CountryModel {
+  const _CountryModel({required this.id, required this.name, required this.code, required this.nationality});
+  factory _CountryModel.fromJson(Map<String, dynamic> json) => _$CountryModelFromJson(json);
+
+@override final  int id;
+@override final  String name;
+@override final  String code;
+@override final  String nationality;
+
+/// Create a copy of CountryModel
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$CountryModelCopyWith<_CountryModel> get copyWith => __$CountryModelCopyWithImpl<_CountryModel>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$CountryModelToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _CountryModel&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.code, code) || other.code == code)&&(identical(other.nationality, nationality) || other.nationality == nationality));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,code,nationality);
+
+@override
+String toString() {
+  return 'CountryModel(id: $id, name: $name, code: $code, nationality: $nationality)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$CountryModelCopyWith<$Res> implements $CountryModelCopyWith<$Res> {
+  factory _$CountryModelCopyWith(_CountryModel value, $Res Function(_CountryModel) _then) = __$CountryModelCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, String name, String code, String nationality
+});
+
+
+
+
+}
+/// @nodoc
+class __$CountryModelCopyWithImpl<$Res>
+    implements _$CountryModelCopyWith<$Res> {
+  __$CountryModelCopyWithImpl(this._self, this._then);
+
+  final _CountryModel _self;
+  final $Res Function(_CountryModel) _then;
+
+/// Create a copy of CountryModel
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? name = null,Object? code = null,Object? nationality = null,}) {
+  return _then(_CountryModel(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,code: null == code ? _self.code : code // ignore: cast_nullable_to_non_nullable
+as String,nationality: null == nationality ? _self.nationality : nationality // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
+
+/// @nodoc
+mixin _$ProvinceModel {
+
+ int get id; String get name;
+/// Create a copy of ProvinceModel
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$ProvinceModelCopyWith<ProvinceModel> get copyWith => _$ProvinceModelCopyWithImpl<ProvinceModel>(this as ProvinceModel, _$identity);
+
+  /// Serializes this ProvinceModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is ProvinceModel&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name);
+
+@override
+String toString() {
+  return 'ProvinceModel(id: $id, name: $name)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $ProvinceModelCopyWith<$Res>  {
+  factory $ProvinceModelCopyWith(ProvinceModel value, $Res Function(ProvinceModel) _then) = _$ProvinceModelCopyWithImpl;
+@useResult
+$Res call({
+ int id, String name
+});
+
+
+
+
+}
+/// @nodoc
+class _$ProvinceModelCopyWithImpl<$Res>
+    implements $ProvinceModelCopyWith<$Res> {
+  _$ProvinceModelCopyWithImpl(this._self, this._then);
+
+  final ProvinceModel _self;
+  final $Res Function(ProvinceModel) _then;
+
+/// Create a copy of ProvinceModel
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? name = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [ProvinceModel].
+extension ProvinceModelPatterns on ProvinceModel {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _ProvinceModel value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _ProvinceModel() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _ProvinceModel value)  $default,){
+final _that = this;
+switch (_that) {
+case _ProvinceModel():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _ProvinceModel value)?  $default,){
+final _that = this;
+switch (_that) {
+case _ProvinceModel() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String name)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _ProvinceModel() when $default != null:
+return $default(_that.id,_that.name);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String name)  $default,) {final _that = this;
+switch (_that) {
+case _ProvinceModel():
+return $default(_that.id,_that.name);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String name)?  $default,) {final _that = this;
+switch (_that) {
+case _ProvinceModel() when $default != null:
+return $default(_that.id,_that.name);case _:
+  return null;
+
+}
+}
+
+}
+
+/// @nodoc
+@JsonSerializable()
+
+class _ProvinceModel implements ProvinceModel {
+  const _ProvinceModel({required this.id, required this.name});
+  factory _ProvinceModel.fromJson(Map<String, dynamic> json) => _$ProvinceModelFromJson(json);
+
+@override final  int id;
+@override final  String name;
+
+/// Create a copy of ProvinceModel
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$ProvinceModelCopyWith<_ProvinceModel> get copyWith => __$ProvinceModelCopyWithImpl<_ProvinceModel>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$ProvinceModelToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ProvinceModel&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name);
+
+@override
+String toString() {
+  return 'ProvinceModel(id: $id, name: $name)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$ProvinceModelCopyWith<$Res> implements $ProvinceModelCopyWith<$Res> {
+  factory _$ProvinceModelCopyWith(_ProvinceModel value, $Res Function(_ProvinceModel) _then) = __$ProvinceModelCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, String name
+});
+
+
+
+
+}
+/// @nodoc
+class __$ProvinceModelCopyWithImpl<$Res>
+    implements _$ProvinceModelCopyWith<$Res> {
+  __$ProvinceModelCopyWithImpl(this._self, this._then);
+
+  final _ProvinceModel _self;
+  final $Res Function(_ProvinceModel) _then;
+
+/// Create a copy of ProvinceModel
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? name = null,}) {
+  return _then(_ProvinceModel(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
+
+/// @nodoc
+mixin _$CityModel {
+
+ int get id; String get name;
+/// Create a copy of CityModel
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$CityModelCopyWith<CityModel> get copyWith => _$CityModelCopyWithImpl<CityModel>(this as CityModel, _$identity);
+
+  /// Serializes this CityModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is CityModel&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name);
+
+@override
+String toString() {
+  return 'CityModel(id: $id, name: $name)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $CityModelCopyWith<$Res>  {
+  factory $CityModelCopyWith(CityModel value, $Res Function(CityModel) _then) = _$CityModelCopyWithImpl;
+@useResult
+$Res call({
+ int id, String name
+});
+
+
+
+
+}
+/// @nodoc
+class _$CityModelCopyWithImpl<$Res>
+    implements $CityModelCopyWith<$Res> {
+  _$CityModelCopyWithImpl(this._self, this._then);
+
+  final CityModel _self;
+  final $Res Function(CityModel) _then;
+
+/// Create a copy of CityModel
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? name = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [CityModel].
+extension CityModelPatterns on CityModel {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _CityModel value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _CityModel() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _CityModel value)  $default,){
+final _that = this;
+switch (_that) {
+case _CityModel():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _CityModel value)?  $default,){
+final _that = this;
+switch (_that) {
+case _CityModel() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String name)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _CityModel() when $default != null:
+return $default(_that.id,_that.name);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String name)  $default,) {final _that = this;
+switch (_that) {
+case _CityModel():
+return $default(_that.id,_that.name);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String name)?  $default,) {final _that = this;
+switch (_that) {
+case _CityModel() when $default != null:
+return $default(_that.id,_that.name);case _:
+  return null;
+
+}
+}
+
+}
+
+/// @nodoc
+@JsonSerializable()
+
+class _CityModel implements CityModel {
+  const _CityModel({required this.id, required this.name});
+  factory _CityModel.fromJson(Map<String, dynamic> json) => _$CityModelFromJson(json);
+
+@override final  int id;
+@override final  String name;
+
+/// Create a copy of CityModel
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$CityModelCopyWith<_CityModel> get copyWith => __$CityModelCopyWithImpl<_CityModel>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$CityModelToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _CityModel&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name);
+
+@override
+String toString() {
+  return 'CityModel(id: $id, name: $name)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$CityModelCopyWith<$Res> implements $CityModelCopyWith<$Res> {
+  factory _$CityModelCopyWith(_CityModel value, $Res Function(_CityModel) _then) = __$CityModelCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, String name
+});
+
+
+
+
+}
+/// @nodoc
+class __$CityModelCopyWithImpl<$Res>
+    implements _$CityModelCopyWith<$Res> {
+  __$CityModelCopyWithImpl(this._self, this._then);
+
+  final _CityModel _self;
+  final $Res Function(_CityModel) _then;
+
+/// Create a copy of CityModel
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? name = null,}) {
+  return _then(_CityModel(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
+
+/// @nodoc
+mixin _$RoleModel {
+
+ int get id; String get name; String get type;
+/// Create a copy of RoleModel
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$RoleModelCopyWith<RoleModel> get copyWith => _$RoleModelCopyWithImpl<RoleModel>(this as RoleModel, _$identity);
+
+  /// Serializes this RoleModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is RoleModel&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.type, type) || other.type == type));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,type);
+
+@override
+String toString() {
+  return 'RoleModel(id: $id, name: $name, type: $type)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $RoleModelCopyWith<$Res>  {
+  factory $RoleModelCopyWith(RoleModel value, $Res Function(RoleModel) _then) = _$RoleModelCopyWithImpl;
+@useResult
+$Res call({
+ int id, String name, String type
+});
+
+
+
+
+}
+/// @nodoc
+class _$RoleModelCopyWithImpl<$Res>
+    implements $RoleModelCopyWith<$Res> {
+  _$RoleModelCopyWithImpl(this._self, this._then);
+
+  final RoleModel _self;
+  final $Res Function(RoleModel) _then;
+
+/// Create a copy of RoleModel
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? name = null,Object? type = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [RoleModel].
+extension RoleModelPatterns on RoleModel {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _RoleModel value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _RoleModel() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _RoleModel value)  $default,){
+final _that = this;
+switch (_that) {
+case _RoleModel():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _RoleModel value)?  $default,){
+final _that = this;
+switch (_that) {
+case _RoleModel() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String name,  String type)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _RoleModel() when $default != null:
+return $default(_that.id,_that.name,_that.type);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String name,  String type)  $default,) {final _that = this;
+switch (_that) {
+case _RoleModel():
+return $default(_that.id,_that.name,_that.type);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String name,  String type)?  $default,) {final _that = this;
+switch (_that) {
+case _RoleModel() when $default != null:
+return $default(_that.id,_that.name,_that.type);case _:
+  return null;
+
+}
+}
+
+}
+
+/// @nodoc
+@JsonSerializable()
+
+class _RoleModel implements RoleModel {
+  const _RoleModel({required this.id, required this.name, required this.type});
+  factory _RoleModel.fromJson(Map<String, dynamic> json) => _$RoleModelFromJson(json);
+
+@override final  int id;
+@override final  String name;
+@override final  String type;
+
+/// Create a copy of RoleModel
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$RoleModelCopyWith<_RoleModel> get copyWith => __$RoleModelCopyWithImpl<_RoleModel>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$RoleModelToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _RoleModel&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.type, type) || other.type == type));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,type);
+
+@override
+String toString() {
+  return 'RoleModel(id: $id, name: $name, type: $type)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$RoleModelCopyWith<$Res> implements $RoleModelCopyWith<$Res> {
+  factory _$RoleModelCopyWith(_RoleModel value, $Res Function(_RoleModel) _then) = __$RoleModelCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, String name, String type
+});
+
+
+
+
+}
+/// @nodoc
+class __$RoleModelCopyWithImpl<$Res>
+    implements _$RoleModelCopyWith<$Res> {
+  __$RoleModelCopyWithImpl(this._self, this._then);
+
+  final _RoleModel _self;
+  final $Res Function(_RoleModel) _then;
+
+/// Create a copy of RoleModel
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? name = null,Object? type = null,}) {
+  return _then(_RoleModel(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
 // dart format on

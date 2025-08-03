@@ -5,7 +5,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:kaaru_app/core/index.dart';
 import 'package:kaaru_app/features/movies/data/index.dart';
 
-part 'entity/movie_entity.dart';
+part 'entities/movie_entity.dart';
 
 part 'usecases/get_movies_usecase.dart';
 
