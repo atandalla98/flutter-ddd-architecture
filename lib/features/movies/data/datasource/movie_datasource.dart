@@ -3,7 +3,7 @@ part of data;
 class MovieDataSource implements IMovie {
   MovieDataSource(this.apiService);
 
-  final ApiService apiService;
+  final ApiMovieService apiService;
   @override
   Future<PaginatedResponse<MovieModel>> getMovies(
     int? page,
@@ -33,6 +33,6 @@ class MovieDataSource implements IMovie {
 
 final movieDataSourceProvider = Provider<MovieDataSource>((ref) {
   final dio = ref.watch(dioProvider);
-  final apiService = ApiService(dio);
+  final apiService = ApiMovieService(dio);
   return MovieDataSource(apiService);
 });
