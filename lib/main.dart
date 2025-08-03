@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:kaaru_app/routing/index.dart';
+import 'package:kaaru_app/config/config.dart';
 
-import 'common/index.dart';
+void main() async {
+  await Environment.initEnvironment();
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  runApp(ProviderScope(child: const MainApp()));
+  runApp(const ProviderScope(child: MainApp()));
 }
 
 class MainApp extends ConsumerWidget {
@@ -14,10 +13,12 @@ class MainApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final appRouter = ref.watch(goRouterProvider);
+
     return MaterialApp.router(
-      theme: AppTheme.lightThemeData,
-      themeMode: ref.watch(themeModeProvider),
-      routerConfig: ref.watch(AppRouter.config),
+      routerConfig: appRouter,
+      theme: AppTheme().getTheme(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
